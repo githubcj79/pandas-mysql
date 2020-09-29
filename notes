@@ -1,0 +1,11 @@
+https://realpython.com/pandas-python-explore-dataset/
+
+$ pyenv install --list | grep " 3\.[7]"
+$ pyenv install -v 3.7.0
+$ pyenv local 3.7.0
+$ pip install -U pip
+$ python -m pip install pandas
+$ python -m pip install sqlalchemy
+$ python -m pip install pymysql
+$ python -m pip install decouple
+$ python -m pip install configparser

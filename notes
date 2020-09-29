@@ -9,3 +9,9 @@ $ python -m pip install sqlalchemy
 $ python -m pip install pymysql
 $ python -m pip install decouple
 $ python -m pip install configparser
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/githubcj79/pandas-mysql.git
+git branch -M master
+git push -u origin master

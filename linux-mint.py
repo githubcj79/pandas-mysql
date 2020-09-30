@@ -72,6 +72,9 @@ GIT
     cjgith79
     cjwom790
 
+    githubcj79 <-- mine
+    gitcj79
+
 TREE
     $ sudo apt install tree -y
     $ tree -a -I ".git|__pycache__|.gitignore" -L 3 -D

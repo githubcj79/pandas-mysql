@@ -28,7 +28,10 @@ def main():
                         f"//{user}:{password}@{host}:{port}/{database}")
     sql_engine = create_engine(db_str_connection, pool_recycle=3600)
     db_connection = sql_engine.connect()
-    frame = pd.read_sql("select * from test.uservitals", db_connection);
+    # table: prs_lte_hour
+    query_ = ("select * from prs_lte_hour where dateid_date between "
+                            "'2020-09-20' and '2020-09-20' limit 1000")
+    frame = pd.read_sql(query_, db_connection);
     pd.set_option('display.expand_frame_repr', False)
     print(frame)
     db_connection.close()
